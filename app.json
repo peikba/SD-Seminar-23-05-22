@@ -1,0 +1,35 @@
+{
+  "id": "3521baae-aee7-4c25-8639-5794afe70bef",
+  "name": "20 SD Seminar",
+  "publisher": "Seminar Management",
+  "version": "1.0.0.0",
+  "brief": "Seminar Management module for Business Central",
+  "description": "This is my awesome Seminar Management module for Business Central - Buy me !!!",
+  "privacyStatement": "",
+  "EULA": "https://ba-consult.dk/downloads/warrety.txt",
+  "help": "",
+  "url": "",
+  "logo": "./Images/Logo.jpg",
+  "dependencies": [
+  {
+    "id": "08d69832-9231-429e-be2c-8bab2c96905b",
+    "name": "Email - Current User Connector",
+    "publisher": "Microsoft",
+    "version": "20.1.39764.39901"
+  }],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "9.0"
+}
