@@ -6,7 +6,7 @@ page 50102 "CSD Seminar List"
     PageType = List;
     SourceTable = "CSD Seminar";
     Editable = false;
-    CardPageId = "CSD Seminar Card";
+    CardPageId = 50101;
     UsageCategory = Lists;
 
     layout

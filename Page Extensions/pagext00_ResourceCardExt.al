@@ -21,13 +21,13 @@ pageextension 50100 "CSD ResourceCardExt" extends "Resource Card"
             }
         }
 
-        addlast(content)
+        addafter("Personal Data")
         {
+
             group("CSD Room")
             {
                 Caption = 'Room';
-                Visible = ShowRoom;
-
+                Visible = ShowMaxField;
                 field("CSD Maximum Participants"; Rec."CSD Maximum Participants")
                 {
                     ApplicationArea = All;
@@ -36,13 +36,13 @@ pageextension 50100 "CSD ResourceCardExt" extends "Resource Card"
         }
     }
 
-    trigger OnAfterGetRecord();
+    trigger OnOpenPage();
     begin
-        ShowRoom := (Rec.Type = Rec.Type::Machine);
+        ShowMaxField := (Rec.Type = Rec.Type::Machine);
         CurrPage.Update(false);
     end;
 
     var
         [InDataSet]
-        ShowRoom: Boolean;
+        ShowMaxField: Boolean;
 }
