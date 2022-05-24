@@ -5,10 +5,10 @@
   "version": "1.0.0.0",
   "brief": "Seminar Management module for Business Central",
   "description": "This is my awesome Seminar Management module for Business Central - Buy me !!!",
-  "privacyStatement": "",
+  "privacyStatement": "https://ba-consult.dk/downloads/warrety.txt",
   "EULA": "https://ba-consult.dk/downloads/warrety.txt",
-  "help": "",
-  "url": "",
+  "help": "https://ba-consult.dk/downloads/warrety.txt",
+  "url": "https://ba-consult.dk/downloads/warrety.txt",
   "logo": "./Images/Logo.jpg",
   "dependencies": [
   {
