@@ -166,7 +166,7 @@ page 50142 "CSD Seminar Manager RoleCenter"
             {
                 Caption = 'Create Invoices';
                 Image = CreateJobSalesInvoice;
-                RunObject = report "Create Seminar Invoices";
+                RunObject = report "CSD Create Seminar Invoices";
                 ApplicationArea = All;
             }
             action(Navigate)
