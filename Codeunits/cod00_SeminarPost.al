@@ -4,7 +4,7 @@ codeunit 50100 "CSD Seminar-Post"
     //   Chapter 7 - Lab 5-2
     //     - Created new codeunit
 
-    TableNo = 50110;
+    TableNo = "CSD Seminar Reg. Header";
 
     trigger OnRun();
     begin
@@ -113,7 +113,7 @@ codeunit 50100 "CSD Seminar-Post"
         NewText003: Label 'Registration';
         NewText004: Label 'Registration %1  -> Posted Reg. %2';
 
-    local procedure CopyCommentLines(FromDocumentType: Integer; ToDocumentType: Integer; FromNumber: Code[20]; ToNumber: Code[20]);
+    local procedure CopyCommentLines(FromDocumentType: enum "Comment Line Table Name"; ToDocumentType: enum "Comment Line Table Name"; FromNumber: Code[20]; ToNumber: Code[20]);
     begin
         SeminarCommentLine.Reset();
         SeminarCommentLine.SetRange("Table Name", FromDocumentType);
