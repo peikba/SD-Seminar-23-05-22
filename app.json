@@ -31,5 +31,6 @@
     "allowDownloadingSource": false,
     "includeSourceInSymbolFile": false
   },
+  "features": ["TranslationFile"],
   "runtime": "9.0"
 }

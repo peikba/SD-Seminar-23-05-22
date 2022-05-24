@@ -57,7 +57,7 @@ page 50102 "CSD Seminar List"
 
     actions
     {
-        area(Navigation)
+        area(Processing)
         {
             group("Seminar")
             {
@@ -69,6 +69,7 @@ page 50102 "CSD Seminar List"
                     Promoted = true;
                     PromotedIsBig = true;
                     PromotedOnly = true;
+                    PromotedCategory = Process;
                     ApplicationArea = All;
                 }
             }

@@ -3,6 +3,7 @@ page 50101 "CSD Seminar Card"
 // Chapter 5 - Lab 2-4 & Lab 2-5
 
 {
+    Caption = 'Seminar Card';
     PageType = Card;
     SourceTable = "CSD Seminar";
 
@@ -12,10 +13,12 @@ page 50101 "CSD Seminar Card"
         {
             group(General)
             {
+                Caption = 'General';
                 field("No."; Rec."No.")
                 {
                     AssistEdit = true;
                     ApplicationArea = All;
+
                     trigger OnAssistEdit();
                     begin
                         if Rec.AssistEdit then
@@ -53,6 +56,7 @@ page 50101 "CSD Seminar Card"
             }
             group(Invoicing)
             {
+                Caption = 'Invoicing';
                 field("Gen. Prod. Posting Group"; Rec."Gen. Prod. Posting Group")
                 {
                     ApplicationArea = All;
@@ -82,7 +86,7 @@ page 50101 "CSD Seminar Card"
 
     actions
     {
-        area(Navigation)
+        area(Processing)
         {
             group("Seminar")
             {
@@ -94,6 +98,7 @@ page 50101 "CSD Seminar Card"
                     Promoted = true;
                     PromotedIsBig = true;
                     PromotedOnly = true;
+                    PromotedCategory = Process;
                     ApplicationArea = All;
                 }
             }
